@@ -21,10 +21,10 @@ int main()
         int arr[n];
         for (int i = 0; i < n; i++)
             cin >> arr[i];
-        int holidays = 7;
+        int holidays = 8;
         for (int i = 0; i < n; i++)
         {
-            if (arr[i] != 6 || arr[i] != 13 || arr[i] != 20 || arr[i] != 27 || arr[i] != 7 || arr[i] != 14 || arr[i] != 21 || arr[i] != 28)
+            if (arr[i] != 6 && arr[i] != 13 && arr[i] != 20 && arr[i] != 27 && arr[i] != 7 && arr[i] != 14 && arr[i] != 21 && arr[i] != 28)
                 holidays++;
         }
         cout << holidays << endl;
