@@ -1,3 +1,22 @@
+/*
+Chef has an array AA of length NN.
+
+In one operation, Chef can choose any two distinct indices i, ji,j (1 \leq i, j \leq N, i \neq j)(1≤i,j≤N,i=j) and either change A_iA 
+i
+​
+  to A_jA 
+j
+​
+  or change A_jA 
+j
+​
+  to A_iA 
+i
+​
+ .
+
+Find the minimum number of operations required to make all the elements of the array equal.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int main()
