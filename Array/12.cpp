@@ -12,35 +12,43 @@ int main()
 {
     int t;
     cin >> t;
-    for (int i = 0; i < t; i++)
+    while (t--)
     {
         int n, x;
         cin >> n >> x;
-        string str;
-        cin >> str;
-        int count = 0;
-        bool flag = false;
-        for (int j = 0; j < n - 1; j++)
+        char s[n];
+        int p[n + 1];
+        p[0] = x;
+        int ans = 0;
+        for (int i = 0; i < n; i++)
         {
-            if (str[j] == str[j + 1])
-                flag = true;
+            cin >> s[i];
+            if (s[i] == 'R')
+            {
+                p[i + 1] = p[i] + 1;
+            }
             else
             {
-                flag = false;
-                break;
+                p[i + 1] = p[i] - 1;
             }
         }
-        if (flag)
-            count = n + 1;
-        else
+        for (int i = 1; i < n + 1; i++)
         {
-            for (int j = 0; j < n; j++)
+            int flag = 0;
+            for (int j = 0; j < i; j++)
             {
-                if ((str[j] == 'R' && str[j + 1] != 'L') || (str[j] == 'L' && str[j + 1] != 'R'))
-                    count++;
+                if (p[j] == p[i])
+                {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0)
+            {
+                ans++;
             }
         }
-        cout << count << endl;
+        cout << ans + 1 << endl;
     }
     return 0;
 }
