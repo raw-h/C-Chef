@@ -5,36 +5,46 @@ n
 n
  . Help Archi with this task.
  */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <math.h>
+
 using namespace std;
 
 int main()
 {
     int t;
     cin >> t;
-    while (t--)
+    for (int i = 0; i < t; i++)
     {
-        long long a, b, n;
+        int a, b, n;
         cin >> a >> b >> n;
-        if (a == b)
+        if ((a == b) || (n % 2 == 0 && abs(a) == abs(b)))
+        {
             cout << 0 << endl;
+        }
         else
         {
-            if (n & 1)
+            if (n % 2 == 0)
             {
-                if (a > b)
+                if (abs(a) > abs(b))
+                {
                     cout << 1 << endl;
+                }
                 else
+                {
                     cout << 2 << endl;
+                }
             }
-            else
+            if (n % 2 != 0)
             {
-                if (abs(a) == abs(b))
-                    cout << 0 << endl;
-                else if (abs(a) > abs(b))
-                    cout << 1 << endl;
-                else
+                if (a < b)
+                {
                     cout << 2 << endl;
+                }
+                else
+                {
+                    cout << 1 << endl;
+                }
             }
         }
     }
