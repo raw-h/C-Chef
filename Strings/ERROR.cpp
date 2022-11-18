@@ -12,7 +12,6 @@ int main()
     cin >> t;
     while (t--)
     {
-
         string str;
         bool flag = false;
         cin >> str;
@@ -26,10 +25,8 @@ int main()
         }
         if (flag == true)
             cout << "Good" << endl;
-
         else
             cout << "Bad" << endl;
     }
-
     return 0;
 }
