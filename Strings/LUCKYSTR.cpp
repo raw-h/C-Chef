@@ -7,25 +7,19 @@ The Little Elephant has found N lucky strings B1, B2, ..., BN under the pillow. 
 */
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    int k, n, i, j;
+    int k, n;
     cin >> k >> n;
     string a[k], b[n];
-
-    for (i = 0; i < k; i++)
-    {
+    for (int i = 0; i < k; i++)
         cin >> a[i];
-    }
-    for (i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++)
         cin >> b[i];
-    }
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         int f = 0;
-        for (j = 0; j < k; j++)
+        for (int j = 0; j < k; j++)
         {
             if (b[i].length() >= 47 || b[i].find(a[j]) != -1)
             {
