@@ -31,7 +31,6 @@ int main()
                 morden.push_back(s);
             }
         }
-
         for (int i = 0; i < N; i++)
         {
             bool check = false;
