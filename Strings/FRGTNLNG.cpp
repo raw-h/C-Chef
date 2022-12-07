@@ -4,7 +4,6 @@ Using something called as the Internet, you have acquired a dictionary of N word
 */
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     int T;
