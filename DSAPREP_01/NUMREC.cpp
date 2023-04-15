@@ -75,7 +75,7 @@ int main(){
     int t;
     cin >> t;
     while(t--){
-        int rows, columns;
+        long long rows, columns;
         cin >> rows >> columns;
         long long ans = ((rows * (rows + 1)) / 2) * ((columns * (columns + 1)) / 2);
         ans -= (rows * columns);
