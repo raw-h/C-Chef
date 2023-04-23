@@ -16,8 +16,6 @@ int main(){
             cin >> y;
             size.push_back(y);
         }
-
-        
     }
     return 0;
 }
