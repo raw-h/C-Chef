@@ -8,6 +8,7 @@ int main(){
         cin >> n;
         vector<int>coord;
         vector<int>size;
+        
         for(int i = 0; i < n; i++){
             int x;
             cin >> x;
