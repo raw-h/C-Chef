@@ -4,6 +4,7 @@ int main(){
     int t;
     cin >> t;
     while(t--){
+        
         long long int n;
         cin >> n;
         vector<int>coord;
