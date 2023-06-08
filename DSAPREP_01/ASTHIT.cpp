@@ -4,7 +4,6 @@ int main()
 {
     int t;
     cin >> t;
-
     while (t-- > 0)
     {
         int n;
