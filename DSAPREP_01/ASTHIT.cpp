@@ -16,6 +16,7 @@ int main()
             cin >> power[i];
         }
         
+        
         stack<int> asteroidStack;
         vector<int> result;
 
